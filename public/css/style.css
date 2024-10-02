@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(70, 61, 61, 0.63);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal h1 {
+    color: #851fe4;
+}
+
+.modal-content {
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 650px;
+    animation: zoom-in 1s ease-in-out forwards;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #851fe4;
+}
+
+.movie-poster-modal {
+    width: 300px;
+    border-radius: 5%;
+}
